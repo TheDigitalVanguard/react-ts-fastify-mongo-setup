@@ -30,7 +30,7 @@ This boilerplate is perfect for developers looking to jumpstart a project with a
 
 # Application Setup Guide
 
-### Using Node v23.7.0 & NPM v10.9.2
+### Using Node v23 & NPM v10
 
 ## 1. Set Up Your Database (MongoDB)
 
