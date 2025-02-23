@@ -24,3 +24,58 @@ This boilerplate provides a modern and efficient full-stack setup for web applic
 - **Scalable Architecture** – Modular and organized folder structure for long-term growth.  
 
 This boilerplate is perfect for developers looking to jumpstart a project with a solid foundation, reducing setup time while following industry best practices. 🚀
+
+# Application Setup Guide
+
+## 1. Set Up Your Database (MongoDB)
+- Create a **MongoDB account** and log in.
+- Navigate to your **database management section** and create a new database named:  
+  **`users`**
+- Inside the `users` database, create a new **collection** named:  
+  **`articles`**
+- Add the following JSON object as an entry in the `articles` collection:
+
+  ```json
+  {
+    "_id": "ba0880b2-49c0-4abd-9aa5-3f3a784a4fd0",
+    "user_id": "2cc2d264-020a-4690-be0f-2ad84a729942",
+    "articles": [
+      {
+        "id": "1b8f723c-a2cf-46e2-bf38-b1d874103950",
+        "article_name": "How The Digital Vanguard was built",
+        "url": "https://www.youtube.com/watch?v=_T9s2K4UWaA",
+        "article_details": [
+          "md_file_1",
+          "md_file_2"
+        ]
+      }
+    ]
+  }
+
+## 2. Configure Environment Variables
+- Locate the `.env.sample` files inside both the **client** and **server** directories.
+- Use these as a reference to create `.env` files in their respective locations.
+- Ensure all required variables (like database connection strings, API keys, etc.) are set properly.
+- ***Note the 'USER_ID' in the server .env is the user_id for that single json object in the mongodb articles collection***
+
+## 3. Install Dependencies
+- Open a terminal and navigate to the **client** directory:
+  ```sh
+  cd client
+  npm install
+  cd ..
+- Then, navigate to the **server** directory and install dependencies there as well::
+  ```sh
+  cd client
+  npm install
+  cd ..
+- Then, navigate back to the root directory
+  ```sh
+  cd ..
+
+## 4. Start the Application
+- Ensure you are in the **root directory**, then run:
+  ```sh
+  npm run start
+
+## Your application should now be running! 🚀
